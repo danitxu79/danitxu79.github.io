@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Molino - Daniel Serrano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Daniel Serrano Armenta</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/danitxu79/" target="_blank">GitHub</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4">Modernización de Molino de Arena</h1>
+                <p class="lead">Este proyecto consistió en la sustitución de un sistema de control obsoleto basado en un PC 486 por una solución moderna utilizando un PLC Raspberry 57AAR de Industrial Shields.</p>
+
+                <h2 class="mt-5">Descripción Técnica</h2>
+                <p>El sistema fue programado desde cero en Python, utilizando la librería <code>librpiplc</code> para la interacción con el hardware del PLC. El programa gestiona de forma autónoma todo el proceso de batido de arena, ajustando en tiempo real la dosificación de agua en función de la humedad y temperatura, datos leídos desde un Arduino conectado por USB.</p>
+
+
+                <h2 class="mt-5">Arquitectura del Software</h2>
+                <p>El corazón del sistema es una aplicación Python robusta y multihilo, diseñada para funcionar de manera ininterrumpida 24/7. La interfaz de usuario, desarrollada con <strong>Tkinter</strong>, permite la monitorización y configuración de parámetros en tiempo real.</p>
+                <ul>
+                    <li><strong>Control de PLC:</strong> Se utiliza la librería <code>librpiplc</code> para una comunicación de bajo nivel y alta fiabilidad con todas las entradas y salidas del PLC de Industrial Shields.</li>
+                    <li><strong>Gestión de Sensores:</strong> Un hilo de ejecución independiente se dedica a la comunicación serie con un Arduino, que actúa como conversor para el sensor de temperatura, garantizando lecturas constantes sin bloquear el proceso principal.</li>
+                    <li><strong>Lógica de Control:</strong> El programa implementa una máquina de estados finitos para gestionar las distintas fases del ciclo del molino (carga, premezcla, batido, descarga), asegurando un funcionamiento predecible y seguro.</li>
+                    <li><strong>Seguridad y Persistencia:</strong> La configuración se guarda en formato JSON, permitiendo ajustes persistentes. Además, se implementa un sistema de logs para registrar cada molinada y facilitar la trazabilidad.</li>
+                </ul>
+
+                <h2 class="mt-5">Galería del Proyecto</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <img src="static/proyectos/molino/Captura de pantalla_20251010_103248.png" class="img-fluid rounded shadow-sm" alt="Interfaz HMI">
+                        <p class="text-center small mt-2">Interfaz HMI principal</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <img src="static/proyectos/molino/Captura de pantalla_20251023_061817.png" class="img-fluid rounded shadow-sm" alt="Detalle de la interfaz">
+                         <p class="text-center small mt-2">Señal Última Molinada</p>
+                    </div>
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <img src="static/proyectos/molino/Raspberry-Pi-PLC-57R-industrial-controller3.webp" class="img-fluid rounded shadow-sm" alt="PLC Industrial Shields">
+                        <p class="text-center small mt-2">PLC Industrial Shields con Raspberry Pi</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <img src="static/proyectos/molino/Configuracion.jpg" class="img-fluid rounded shadow-sm" alt="Pantalla de Configuración">
+                        <p class="text-center small mt-2">Pantalla de Configuración</p>
+                    </div>
+                </div>
+
+                <h2 class="mt-5">Documentación para el Operario</h2>
+                <div class="alert alert-secondary" role="alert">
+                    <h4 class="alert-heading">Manual de Usuario</h4>
+                    <p>Para facilitar la operación y el mantenimiento del sistema, se elaboró un completo manual técnico destinado al operario del molino. Este documento detalla el funcionamiento de la interfaz, los modos de operación y los procedimientos de configuración.</p>
+                    <hr>
+                    <a href="static/proyectos/molino/Manual Molino.pdf" class="btn btn-primary" target="_blank">Descargar Manual de Operario (PDF)</a>
+                </div>            </div>
+            <div class="col-lg-4">
+                <div class="card bg-light p-3">
+                    <h3 class="mb-3">Tecnologías</h3>
+                    <ul class="list-unstyled">
+                        <li><span class="badge bg-primary">Python</span></li>
+                        <li><span class="badge bg-primary">Tkinter</span></li>
+                        <li><span class="badge bg-primary">PLC Industrial</span></li>
+                        <li><span class="badge bg-primary">Raspberry Pi</span></li>
+                        <li><span class="badge bg-primary">librpiplc</span></li>
+                        <li><span class="badge bg-primary">Arduino</span></li>
+                        <li><span class="badge bg-primary">Control Industrial</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 - Mi Portafolio Profesional</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

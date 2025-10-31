@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - Daniel Serrano</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Daniel Serrano Armenta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/danitxu79/" target="_blank">GitHub</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4">Sobre Mí</h1>
+                    <p class="lead">
+                        Soy un electricista oficial de 1ª con 47 años de edad y unos 25 años de experiencia como electricista y un apasionado programador autodidacta desde mi adolescencia. Mi carrera es una fusión única de la electricidad industrial y el desarrollo de software, lo que me permite crear soluciones robustas y eficientes para problemas complejos del mundo real.
+                    </p>
+    
+                    <h2 class="mt-5">Proyecto Destacado: Modernización de Molino de Arena</h2>
+                    <p>
+                        En mi trabajo actual en la fundición nodular <strong>Belar Metal Casting</strong>, llevé a cabo un proyecto de modernización completo en un molino de arena. El sistema antiguo, basado en un obsoleto PC 486, fue reemplazado por una solución moderna y mucho más potente.
+                    </p>
+                    <p>
+                        Implementé un PLC <strong>Raspberry 57AAR de Industrial Shields</strong>, un equipo que combina la versatilidad de una Raspberry Pi con la fiabilidad de un PLC industrial. Asumí el reto de programar todo el sistema desde cero en Python, utilizando la librería <code>librpiplc</code> para interactuar con el hardware.
+                    </p>
+                    <p>
+                        El nuevo sistema que desarrollé gestiona de forma autónoma todo el proceso de batido de arena. Para ello, el programa tiene en cuenta en tiempo real variables críticas como la <strong>humedad</strong> y la <strong>temperatura</strong> (leída desde un Arduino conectado por USB) para calcular y dosificar la cantidad precisa de agua necesaria en cada ciclo. Esto no solo optimiza el proceso, sino que también asegura la calidad constante de la mezcla.
+                    </p>
+                    <p>
+                        Este proyecto es un claro ejemplo de cómo combino mis dos pasiones: la electricidad para entender y cablear el sistema, y la programación para darle vida, inteligencia y autonomía.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-light p-4">
+                        <h3 class="mb-4">Tecnologías y Habilidades</h3>
+                        <ul class="list-unstyled">
+                            <li><span class="badge bg-primary">Electricidad Industrial</span></li>
+                            <li><span class="badge bg-primary">Programación de PLCs</span></li>
+                            <li><span class="badge bg-primary">Python</span></li>
+                            <li><span class="badge bg-primary">Tkinter</span></li>
+                            <li><span class="badge bg-primary">librpiplc</span></li>
+                            <li><span class="badge bg-primary">Integración de sensores</span></li>
+                            <li><span class="badge bg-primary">Control en tiempo real</span></li>
+                            <li><span class="badge bg-primary">Resolución de problemas</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 - Mi Portafolio Profesional</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
