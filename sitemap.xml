@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Gemini CLI -->
+
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/index.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/sobre-mi.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/proyectos.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/contacto.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/molino.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/horno.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://danitxu79.github.io/Mi_Portafolio/terminal-ia.html</loc>
+  <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+
+</urlset>

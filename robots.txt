@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://danitxu79.github.io/Mi_Portafolio/sitemap.xml
