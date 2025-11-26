@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto SentinelX - Daniel Serrano</title>
+    <meta name="author" content="Daniel Serrano Armenta">
+    <meta name="description" content="Proyecto de interfaz gráfica para la gestión de seguridad en Linux.">
+    <meta name="keywords" content="sentinelx, python, firewall, antivirus, security, qt6, pyside6, daniel serrano">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Daniel Serrano Armenta</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/danitxu79/" target="_blank">GitHub</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4">SentinelX</h1>
+                <p class="lead">SentinelX es una moderna interfaz gráfica (GUI) diseñada para simplificar la seguridad en Linux. Unifica la gestión de firewalls (firewalld/ufw) y la protección antimalware (ClamAV) en una experiencia robusta y accesible, orientada a usuarios que migran desde otros sistemas operativos o que prefieren no usar la terminal.</p>
+
+                <h2 class="mt-5">Descripción Técnica</h2>
+                <p>El sistema fue programado desde cero en Python, utilizando la librería <code>PySide6</code> para la interfaz gráfica.</p>
+
+
+                <h2 class="mt-5">Arquitectura del Software</h2>
+                <p>El corazón del sistema es una aplicación Python robusta, diseñada para funcionar de manera ininterrumpida 24/7. La interfaz de usuario, desarrollada con <strong>PySide6</strong>, permite la monitorización y configuración de parámetros en tiempo real.</p>
+                <ul>
+                    <li><strong>Interfaz Gráfica:</strong> Se utiliza la librería <code>PySide6</code> para crear una interfaz de usuario moderna y fluida.</li>
+                    <li><strong>Gestión de Firewall:</strong> SentinelX interactúa con los backends de <code>firewalld</code> y <code>ufw</code> para gestionar reglas de firewall.</li>
+                    <li><strong>Protección Antivirus:</strong> Integración con <code>ClamAV</code> para escaneo de malware.</li>
+                    <li><strong>Gestión de Privilegios:</strong> Uso de <code>polkit</code> para una gestión segura de los permisos.</li>
+                </ul>
+
+                <h2 class="mt-5 slide-up">Galería del Proyecto</h2>
+                <div class="row slide-up">
+                    <div class="col-md-12 col-lg-12 mb-3">
+                        <img src="static/proyectos/sentinelx/Captura01.png" class="img-fluid rounded shadow-sm" alt="Interfaz HMI">
+                        <p class="text-center small mt-2">Interfaz principal de SentinelX</p>
+                    </div>
+                </div>
+
+                <h2 class="mt-5 slide-up">Documentación</h2>
+                <div class="alert alert-secondary slide-up" role="alert">
+                    <h4 class="alert-heading">Repositorio en GitHub</h4>
+                    <p>Puedes encontrar toda la documentación y el código fuente del proyecto en el repositorio de GitHub.</p>
+                    <hr>
+                    <a href="https://github.com/danitxu79/SentinelX" class="btn btn-primary" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+            <div class="col-lg-4 slide-up">
+                <div class="card bg-light p-3">
+                    <h3 class="mb-3">Tecnologías</h3>
+                    <ul class="list-unstyled">
+                        <li><span class="badge bg-primary">Python</span></li>
+                        <li><span class="badge bg-primary">PySide6</span></li>
+                        <li><span class="badge bg-primary">firewalld</span></li>
+                        <li><span class="badge bg-primary">ufw</span></li>
+                        <li><span class="badge bg-primary">clamav</span></li>
+                        <li><span class="badge bg-primary">polkit</span></li>
+                        <li><span class="badge bg-primary">nmcli</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 - Mi Portafolio Profesional</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

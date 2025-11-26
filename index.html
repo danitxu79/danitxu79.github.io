@@ -44,7 +44,7 @@
 
     <main class="container mt-4">
         <!-- Hero Section -->
-        <div class="px-4 py-5 my-5 text-center slide-up">
+        <div class="px-4 py-5 my-5 text-center">
             <h1 class="display-5 fw-bold">Daniel Serrano Armenta</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Bienvenido a mi portfolio. Soy un electricista con experiencia y un desarrollador de software apasionado por la creación de aplicaciones web robustas y escalables. Aquí encontrarás una selección de mis mejores proyectos.</p>
@@ -60,21 +60,11 @@
             <h2 class="text-center mb-4">Proyectos Destacados</h2>
             <div class="col-md-6 col-lg-4 mb-4 slide-up">
                 <div class="card h-100">
-                    <img src="static/proyectos/molino/Captura de pantalla_20251010_103248.png" class="card-img-top" alt="Proyecto Molino">
+                    <img src="static/proyectos/sentinelx/SentinelX-Logo.png" class="card-img-top" alt="Proyecto SentinelX">
                     <div class="card-body">
-                        <h5 class="card-title">Modernización de Molino de Arena</h5>
-                        <p class="card-text">Sustitución de un sistema de control obsoleto por un PLC industrial con Raspberry Pi, programado en Python para la gestión autónoma del proceso.</p>
-                        <a href="molino.html" class="btn btn-primary">Ver Proyecto</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 slide-up">
-                <div class="card h-100">
-                    <img src="static/proyectos/horno/IMG20251031111632.jpg" class="card-img-top" alt="Proyecto Horno">
-                    <div class="card-body">
-                        <h5 class="card-title">Automatización Horno de Fusión</h5>
-                        <p class="card-text">Automatización de un horno de fusión para controlar la potencia con un Arduino Pro Mini y contactores.</p>
-                        <a href="horno.html" class="btn btn-primary">Ver Proyecto</a>
+                        <h5 class="card-title">SentinelX</h5>
+                        <p class="card-text">GUI para gestionar la seguridad en Linux (Firewall e Antivirus).</p>
+                        <a href="sentinelx.html" class="btn btn-primary">Ver Proyecto</a>
                     </div>
                 </div>
             </div>
@@ -98,6 +88,26 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-4 mb-4 slide-up">
+                <div class="card h-100">
+                    <img src="static/proyectos/molino/Captura de pantalla_20251010_103248.png" class="card-img-top" alt="Proyecto Molino">
+                    <div class="card-body">
+                        <h5 class="card-title">Modernización de Molino de Arena</h5>
+                        <p class="card-text">Sustitución de un sistema de control obsoleto por un PLC industrial con Raspberry Pi, programado en Python para la gestión autónoma del proceso.</p>
+                        <a href="molino.html" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 slide-up">
+                <div class="card h-100">
+                    <img src="static/proyectos/horno/IMG20251031111632.jpg" class="card-img-top" alt="Proyecto Horno">
+                    <div class="card-body">
+                        <h5 class="card-title">Automatización Horno de Fusión</h5>
+                        <p class="card-text">Automatización de un horno de fusión para controlar la potencia con un Arduino Pro Mini y contactores.</p>
+                        <a href="horno.html" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -107,5 +117,28 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.slide-up');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(element => {
+                // Pausar la animación inicialmente
+                element.style.animationPlayState = 'paused';
+                observer.observe(element);
+            });
+        });
+    </script>
 </body>
 </html>
