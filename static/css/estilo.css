@@ -1,6 +1,15 @@
 /* static/css/estilo.css */
 
-/* Estilos personalizados pueden ir aquí */
+/* Variables para el tema oscuro */
+:root {
+    --bs-body-bg: #0f172a;
+    --bs-body-color: #e2e8f0;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
 
 /* Animaciones */
 @keyframes fadeIn {
@@ -34,11 +43,13 @@
 /* Transiciones en tarjetas y botones */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border-color: rgba(56, 189, 248, 0.4); /* Celeste vibrante al pasar el mouse */
 }
 
 .btn {
@@ -47,4 +58,24 @@
 
 .btn:hover {
     transform: translateY(-2px);
+}
+
+/* Estilo para las insignias (badges) */
+.badge {
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+}
+
+/* Ajustes para el Hero Section en modo oscuro */
+.display-5 {
+    color: #f8fafc;
+}
+
+.lead {
+    color: #94a3b8;
+}
+
+/* Navbar adjustments */
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
