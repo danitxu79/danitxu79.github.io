@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Presentación - Daniel Serrano Armenta</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #1e3a5f; /* Azul oscuro corporativo */
+            --secondary-color: #0e639c; /* Azul más vivo (VSCode style) */
+            --text-color: #333333;
+            --sidebar-text: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        .cv-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cv-container {
+            background-color: #ffffff;
+            color: var(--text-color);
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Botón de Impresión */
+        .print-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        /* --- BARRA LATERAL --- */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: var(--sidebar-text);
+            width: 35%;
+            padding: 40px 30px;
+        }
+
+        .sidebar h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .sidebar h2 {
+            font-size: 14px;
+            font-weight: 300;
+            color: #a9c2d9;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            width: 25px;
+            color: var(--secondary-color);
+            font-size: 16px;
+        }
+
+        /* --- CONTENIDO PRINCIPAL --- */
+        .main-content {
+            width: 65%;
+            padding: 50px 40px;
+            background-color: #fff;
+        }
+
+        .letter-header {
+            margin-bottom: 30px;
+        }
+
+        .letter-subject {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .letter-body p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .letter-body ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .letter-footer {
+            margin-top: 40px;
+        }
+
+        @media print {
+            .navbar, .print-btn { display: none !important; }
+            body { background: none; }
+            .cv-wrapper { padding: 0; }
+            .cv-container { box-shadow: none; width: 100%; max-width: none; }
+        }
+
+        @media (max-width: 768px) {
+            .cv-container { flex-direction: column; }
+            .sidebar, .main-content { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Daniel Serrano Armenta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="carta-de-presentacion.html">Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/AnabasaSoft/" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cv-wrapper">
+        <div class="cv-container">
+            <button class="btn btn-secondary print-btn" onclick="window.print()">
+                <i class="fas fa-print"></i> Imprimir / PDF
+            </button>
+
+            <aside class="sidebar">
+                <h1>Daniel Serrano</h1>
+                <h2>Técnico Híbrido: Mantenimiento e Integración</h2>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> 657 19 94 91</li>
+                    <li><i class="fas fa-envelope"></i> dani.eus79@gmail.com</li>
+                    <li><i class="fas fa-globe"></i> danitxu79.github.io</li>
+                    <li><i class="fas fa-code"></i> anabasasoft.github.io</li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <div class="letter-header">
+                    <div class="letter-subject">
+                        Asunto: Candidatura - Perfil Técnico Híbrido: Mantenimiento Eléctrico Industrial e Integración de Sistemas (Industria 4.0)
+                    </div>
+                    <p>Estimado/a Responsable de Selección,</p>
+                </div>
+
+                <div class="letter-body">
+                    <p>Les escribo con gran entusiasmo para presentar mi candidatura. Mi perfil profesional ofrece una combinación poco habitual en el sector industrial actual: uno la sólida experiencia práctica "a pie de máquina" como Oficial de 2ª en Mantenimiento Eléctrico Industrial, con una avanzada capacidad técnica como desarrollador de software (Python, Dart, C++) y diseñador de hardware a medida (Arduino).</p>
+
+                    <p>Durante mi trayectoria en mi actual puesto dentro de una fundición nodular, no solo me he encargado de la resolución de averías complejas en cuadros de potencia a 400V, sino que he asumido la modernización y digitalización de maquinaria crítica, ejecutando proyectos integrales de "retrofitting".</p>
+
+                    <p>El mayor hito de esta transformación ha sido el rediseño completo del sistema de control del molino de arena. He sustituido un hardware obsoleto (PC 486) por un sistema centralizado basado en Raspberry Pi PLC, programando desde cero la interfaz HMI/SCADA en Python. He dotado a la máquina de comportamientos inteligentes que antes eran impensables:</p>
+
+                    <ul>
+                        <li><strong>Sincronización automatizada</strong> con las cintas de descarga y entrega de arena.</li>
+                        <li><strong>Memoria de estado (sistema anti-dobles molinadas)</strong> que bloquea operaciones erróneas para evitar sobrecargas mecánicas.</li>
+                        <li><strong>Dosificación dinámica de agua</strong>, calculando en tiempo real la compensación por evaporación y temperatura.</li>
+                        <li><strong>Tolerancia a fallos de hardware</strong>, ejecutando la lectura de sensórica de forma asíncrona mediante hilos (Threading) para evitar bloqueos del sistema.</li>
+                    </ul>
+
+                    <p>Más allá del molino, he aplicado esta visión de Industria 4.0 a otras áreas de la planta. He diseñado y programado en C++ un sistema de automatización para la subida de los hornos utilizando microcontroladores Arduino Nano y electrónica de relés. Además, complemento la creación de soluciones físicas a medida (como drones o estructuras de sensores) mediante el diseño y la <strong>impresión 3D</strong>.</p>
+
+                    <p>Para unificar todo este ecosistema IoT, he desarrollado una aplicación móvil corporativa en Android (Flutter/Dart). Esta herramienta permite conectarse mediante SSH de forma remota a los autómatas para realizar actualizaciones (OTA), controlar el sistema y extraer telemetría de producción (logs CSV). Todo este ciclo de desarrollo de software lo acelero y optimizo utilizando <strong>Inteligencia Artificial (Prompt Engineering)</strong>, lo que me permite programar, estructurar arquitecturas de código y depurar errores de forma extremadamente ágil.</p>
+
+                    <p>Comprendo perfectamente las exigencias físicas de la industria (maniobra, variadores, seguridad LOTO), y sé cómo traducirlas a sistemas automatizados bajo entornos Linux. Busco integrarme en un equipo donde pueda aportar valor real, tanto diagnosticando una derivación compleja en planta como programando el cerebro de la próxima máquina.</p>
+
+                    <p>En los enlaces adjuntos a mi currículum podrán examinar mi portafolio web y los repositorios con el código fuente. Estaría encantado de mantener una entrevista para detallar cómo mis habilidades técnicas pueden contribuir a sus instalaciones.</p>
+                </div>
+
+                <div class="letter-footer">
+                    <p>Atentamente,</p>
+                    <p><strong>Daniel Serrano Armenta</strong></p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
