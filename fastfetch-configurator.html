@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastfetch Configurator - GUI para Fastfetch - Daniel Serrano</title>
+    <meta name="author" content="Daniel Serrano Armenta">
+    <meta name="description" content="Fastfetch Configurator es una aplicación de escritorio multiplataforma construida con Python y PyQt6 que proporciona una potente interfaz gráfica para diseñar y desplegar configuraciones de fastfetch.">
+    <meta name="keywords" content="fastfetch, configurator, GUI, Python, PyQt6, Linux, customization, terminal, system info, open source">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danitxu79.github.io/Mi_Portafolio/fastfetch-configurator.html">
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Fastfetch Configurator - Diseña tu terminal con estilo">
+    <meta property="og:description" content="Interfaz gráfica potente para configurar fastfetch sin tocar archivos JSON.">
+    <meta property="og:image" content="https://danitxu79.github.io/Mi_Portafolio/static/proyectos/fastfetch-configurator/icono.png">
+    <meta property="og:url" content="https://danitxu79.github.io/Mi_Portafolio/fastfetch-configurator.html">
+    <meta property="og:type" content="article">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Daniel Serrano Armenta</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carta-de-presentacion.html">Carta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/AnabasaSoft/" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4">Fastfetch Configurator</h1>
+                <p class="lead">Potente interfaz gráfica para diseñar, previsualizar y desplegar configuraciones de <code>fastfetch</code> sin necesidad de editar manualmente archivos JSON.</p>
+
+                <h2 class="mt-5">Descripción Técnica</h2>
+                <p>Fastfetch Configurator simplifica la personalización de la información del sistema en la terminal. Construido con Python y PyQt6, ofrece una experiencia fluida para usuarios que desean un "fetch" único pero prefieren evitar la complejidad de la sintaxis JSON de Fastfetch. Incluye un motor de renderizado ANSI a HTML para previsualizar los cambios en tiempo real.</p>
+
+                <h2 class="mt-5">Características Principales</h2>
+                <ul>
+                    <li><strong>Constructor Visual de Secciones:</strong> Crea secciones personalizables con ordenación por arrastrar y soltar (drag-and-drop).</li>
+                    <li><strong>Tematización de Color Completa:</strong> Asigna colores ANSI a títulos, valores, iconos y barras de progreso dinámicamente.</li>
+                    <li><strong>Más de 50 Módulos Soportados:</strong> Accede a una lista categorizada de módulos de información del sistema (Hardware, Recursos, Red, etc.).</li>
+                    <li><strong>Previsualización en Vivo:</strong> Visualiza instantáneamente cómo quedará tu configuración gracias al motor interno de previsualización.</li>
+                    <li><strong>Lanzamiento en Terminal Real:</strong> Prueba tus configuraciones directamente en emuladores de terminal nativos como Konsole, Alacritty o Kitty.</li>
+                    <li><strong>Soporte para Logotipos Personalizados:</strong> Reemplaza el logo de la distro por imágenes propias con posicionamiento configurable.</li>
+                    <li><strong>Integración con Shell:</strong> Inyección opcional automática en <code>.bashrc</code> o <code>.zshrc</code> para ejecutar fastfetch al iniciar la terminal.</li>
+                </ul>
+
+                <h2 class="mt-5 slide-up">Galería del Proyecto</h2>
+                <div class="row slide-up">
+                    <div class="col-md-12 mb-3 text-center">
+                        <img src="static/proyectos/fastfetch-configurator/captura.jpg" class="img-fluid rounded shadow-sm" alt="Interfaz Fastfetch Configurator">
+                        <p class="text-center small mt-2">Personalización visual de Fastfetch con la interfaz de Fastfetch Configurator</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 slide-up">
+                    <a href="https://github.com/AnabasaSoft/fastfetch-configurator" class="btn btn-outline-light" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+            <div class="col-lg-4 slide-up">
+                <div class="card bg-dark-subtle p-3 text-center mb-4">
+                    <img src="static/proyectos/fastfetch-configurator/icono.png" class="img-fluid mx-auto d-block mb-3" style="max-width: 150px;" alt="Icono de Fastfetch Configurator">
+                </div>
+                <div class="card bg-dark-subtle p-3">
+                    <h3 class="mb-3">Tecnologías</h3>
+                    <ul class="list-unstyled">
+                        <li><span class="badge bg-primary">Python 3</span></li>
+                        <li><span class="badge bg-primary">PyQt6</span></li>
+                        <li><span class="badge bg-primary">Fastfetch</span></li>
+                        <li><span class="badge bg-primary">JSON</span></li>
+                        <li><span class="badge bg-primary">ANSI Rendering</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 - Mi Portafolio Profesional</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
